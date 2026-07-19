@@ -1,0 +1,55 @@
+{
+  "name": "kotodama-mfbtsuyc",
+  "main": "src/app.ts",
+  "compatibility_date": "2025-03-17",
+  "compatibility_flags": ["nodejs_compat","nodejs_als"],
+  "assets": {
+    "directory": "./_svelte",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+  "vars": {
+    "APP_CAPABILITIES": "[\"peer-discovery\",\"screen-config\",\"clipboard-relay\"]",
+    "APP_DESCRIPTION": "Cross-platform mouse/keyboard sharing coordinator",
+    "APP_DISPLAY_NAME": "ShareMouse",
+    "APP_EMBED_URL": "https://mfbtsuyc.etzhayyim.com/?embed=1",
+    "APP_FRAMEWORK": "ts-native",
+    "APP_NANOID": "mfbtsuyc",
+    "APP_PERFORMER_TYPE": "",
+    "APP_UI_TYPE": "appview"
+  },
+  "r2_buckets": [
+    { "binding": "YATA_R2", "bucket_name": "etzhayyim-cache" },
+    { "binding": "CDN_R2", "bucket_name": "etzhayyim-cdn" },
+    { "binding": "CACHE_R2", "bucket_name": "etzhayyim-cache" }
+  ],
+  "services": [
+    { "binding": "KAGAMI_RPC", "service": "etzhayyim-kagami-2604021830", "entrypoint": "KagamiRPC" },
+    { "binding": "PDS_SERVICE", "service": "etzhayyim-pds-2603241700" }
+  ],
+  "secrets_store_secrets": [
+    { "binding": "SS_YATA_S3_KEY_ID", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "yata_s3_key_id" },
+    { "binding": "SS_YATA_S3_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "yata_s3_secret_key" },
+    { "binding": "SS_OPENROUTER_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "openrouter_api_key" },
+    { "binding": "SS_PUBLIC_CLERK_PUBLISHABLE_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "public_clerk_publishable_key" },
+    { "binding": "SS_CLERK_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "clerk_secret_key" },
+    { "binding": "SS_SIGNING_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "signing_key" },
+    { "binding": "SS_HUME_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "hume_api_key" },
+    { "binding": "SS_HUME_SECRET_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "hume_secret_key" },
+    { "binding": "SS_HIGGSFIELD_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "higgsfield_api_key" },
+    { "binding": "SS_HIGGSFIELD_API_SECRET", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "higgsfield_api_secret" },
+    { "binding": "SS_RUNWAY_API_KEY", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "runway_api_key" },
+    { "binding": "SS_EPIDEMIC_SOUND_JWT_1", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "epidemic_sound_jwt_1" },
+    { "binding": "SS_EPIDEMIC_SOUND_JWT_2", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "epidemic_sound_jwt_2" },
+    { "binding": "SS_TURN_KEY_ID", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "turn_key_id" },
+    { "binding": "SS_TURN_KEY_API_TOKEN", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "turn_key_api_token" },
+    { "binding": "SS_KOTODAMA_INTERNAL_TOKEN", "store_id": "1824561668fe47cc9127d493961885af", "secret_name": "kotodama_internal_token" }
+  ],
+  "rules": [
+    { "type": "CompiledWasm", "globs": ["**/*.wasm"] }
+  ],
+  "routes": [
+    { "pattern": "mfbtsuyc.etzhayyim.com/*", "zone_name": "etzhayyim.com" }
+  ]
+}
